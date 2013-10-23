@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script>
+      (new Image()).src = 
+        "http://<?=$_SERVER['HTTP_HOST']?>/watch-hook.php?r="+
+        Math.random()+
+        "&href=" + encodeURIComponent(window.location.toString())+
+        "&referrer=" + encodeURIComponent(document.referrer);
+    </script>
+  </head>
+  <body>
+    Hello, world!
+  </body>
+</html>
